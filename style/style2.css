@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.containr1{
+    height: 100vh;
+    width: 100%;
+    background: #222;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.swiper{
+    height: fit-content;
+    width: 80%;
+}
+
+.swiper-slide img{
+    width: 100%;
+}

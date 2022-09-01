@@ -1,0 +1,151 @@
+<html>
+    <head>
+        <title>All product |E-Comarce</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css">
+        <link rel="stylesheet" href="../style/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Anek+Latin:wght@200&family=Poppins:wght@100;200;400;600;700&family=Roboto+Mono&family=Roboto:ital,wght@0,100;0,300;0,700;1,500&family=Rubik+Moonrocks&family=Stoke:wght@300&family=Supermercado+One&family=Titan+One&family=Yeon+Sung&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css">
+    </head>
+    <div>
+       
+            <div class="container">
+                <div class="navbar">
+                    <div class="logo">
+                        <a href="/index.html"><img src="/images/logo.png" width="130px"></a>
+                    </div>
+                    <nav>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="product.html">Products</a></li>
+                            <li><a href="">About</a></li>
+                            <li><a href="">Contact</a></li>
+                            <li><a href="login.html">Account</a></li>
+                        </ul>
+                    </nav>
+                    <a href=""><img src="/images/cart.png" width="30px" height="30px"></a>
+                    <img src="/images/menu.png" alt="" class="menu-icon" id="menu" onclick="menutoggle">
+                </div>
+            </div>
+    </div>
+
+    
+
+
+
+    <div class="account-page">
+        <div class="container">
+            <div class="row">
+                <div class="col-2">
+                    <img src="./images/image1.png" alt="">
+                </div>
+                <div class="col-2">
+                    <div class="form-container">
+                      <div class="form-btn">
+                        <span onclick="login()">Login</span>
+                        <span onclick="Regis()">Create</span>
+                        <hr id="ingetrator">
+                      </div>
+
+                      <form action="" id="LoginForm">
+                        <input type="text" placeholder="Username">
+                        <input type="password" placeholder="password">
+                        <button type="submit" class="btn">Submit</button>
+                        <a href="">Forget Password</a>
+                      </form>
+
+                      
+                      <form action="" id="RegistrationForm">
+                        <input type="text" placeholder="Username">
+                        <input type="email" placeholder="email">
+                        <input type="password" placeholder="password">
+                        <button type="submit" class="btn">Create</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download Our App Fo Andriod Or Ios Mobile</p>
+                    <div class="app">
+                        <img src="/images/play-store.png" alt="">
+                        <img src="/images/app-store.png" alt="">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="/images/logo-white.png" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, reprehenderit.</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Usefulllinks</h3>
+                    <ul>
+                        <li><a href="">Coupon</a></li>
+                        <li><a href="">Blog psot</a></li>
+                        <li><a href="">Return Policy</a></li>
+                        <li><a href="">Join Affilite</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col-4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li><a href="">Facebook</a></li>
+                        <li><a href="">Linkedin</a></li>
+                        <li><a href="">Intragram</a></li>
+                        <li><a href="">Twiter</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copy">Copyright|All Right ReservEmran.com</p>
+        </div>
+    </div>
+
+   
+    <script>
+        var menu = document.getElementsByid("menu")
+
+        menu.style.maxHeight = "0px";
+
+        function menutoggle() {
+            if (menu.style.maxHeight == "0px") {
+                menu.style.maxHeight = "200px";
+            }
+            else{
+                menu.style.maxHeight = "0px";
+            }
+        }
+
+    </script>
+
+  
+
+    <script>
+     var LoginForm = document.getElementById("LoginForm")
+     var RegistrationForm = document.getElementById("RegistrationForm")
+     var ingetrator = document.getElementById("ingetrator")
+        
+        function login() {
+            LoginForm.style.transform = "translateX(300px)"
+            RegistrationForm.style.transform = "translateX(300px)" 
+            ingetrator.style.transform = "translateX(0px)"  
+            
+           }
+          
+        function Regis() {
+            RegistrationForm.style.transform = "translateX(0px)"
+            LoginForm.style.transform = "translateX(0px)"
+            ingetrator.style.transform = "translateX(100px)" 
+           }
+           
+    </script>
+
+
+   </body>
+</html>
